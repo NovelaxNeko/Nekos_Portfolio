@@ -140,7 +140,13 @@ body
     }
 }
 
-#line
+#envelope
+{
+    text-align: center;
+    font-size: 18px;
+}
+
+.line
 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -186,5 +192,5 @@ iframe
 
 #footer
 {
-    height: 100px;
+    margin-top: 50px;
 }
