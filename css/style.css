@@ -2,6 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
+
     background-color: gray;
     background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgb(30, 29, 44) 75%) no-repeat center center fixed,
     url(../img/pawbackground_erased.jpg) no-repeat center center fixed;
@@ -11,9 +12,17 @@ body
     color: white;
 }
 
+#profilepic
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    margin-top: 150px;
+}
+
 #header
 {
-    padding-top: 25vh;
     height: max-content;
 
     padding-left: 5%;
@@ -40,7 +49,32 @@ body
     letter-spacing: 20px;
     font-weight: 400;
     font-size: 35px;
-    margin-bottom: 150px;
+    margin-bottom: -15px;
+}
+
+#info
+{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+#info
+{
+    font-size: 20px;
+}
+
+@media (pointer:none), (pointer:coarse) 
+{
+    #info
+    {
+        font-size: 40px;
+    }
 }
 
 #intro
@@ -49,6 +83,52 @@ body
     font-size: 17px;
     letter-spacing: 2px;
     line-height: 28px;
+}
+
+#icons
+{
+    text-align: center;
+    width: 100%;
+}
+
+#icons .icon
+{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon a
+{
+    color:white;
+}
+
+.icon img
+{
+    width: 100%;
+}
+
+#icons .icon
+{
+    width: 7%;
+}
+
+.icon p
+{
+    font-size: 18px;
+}
+
+@media (pointer:none), (pointer:coarse) 
+{
+    #icons .icon
+    {
+        width: 17%;
+    }
+
+    .icon p
+    {
+        font-size: 36px;
+    }
 }
 
 #line
@@ -71,7 +151,7 @@ body
     display: inline-block;
     overflow: hidden;
 
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 .sketchfab-embed-wrapper:hover
@@ -97,5 +177,5 @@ iframe
 
 #footer
 {
-    height: 500px;
+    height: 100px;
 }
