@@ -101,6 +101,15 @@ body
 .icon a
 {
     color:white;
+    text-decoration: none;
+    
+    opacity: 0.5;
+}
+
+.icon a:hover
+{
+    opacity: 1;
+    transition: opacity 0.15s ease-in;
 }
 
 .icon img
