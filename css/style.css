@@ -1,0 +1,101 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgb(30, 29, 44) 75%) no-repeat center center fixed,
+    url(../img/pawbackground_erased.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+#header
+{
+    padding-top: 25vh;
+    height: max-content;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#name
+{
+    text-align: center;
+}
+
+#realname
+{
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 30px;
+    font-weight: 100;
+    font-size: 150px;
+    margin-bottom: -75px;
+}
+
+#subname
+{
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 20px;
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 150px;
+}
+
+#intro
+{
+    font-weight: 100;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+
+#line
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    height: 2px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#content
+{
+    text-align: center;
+}
+
+.sketchfab-embed-wrapper
+{
+    display: inline-block;
+    overflow: hidden;
+
+    opacity: 0.2;
+}
+
+.sketchfab-embed-wrapper:hover
+{
+    opacity: 1;
+    transition: opacity 0.35s ease-in;
+}
+
+iframe
+{
+    width: 49vw;
+    height: 25vw;
+}
+
+@media (pointer:none), (pointer:coarse) 
+{
+    iframe
+    {
+        width: 100vw;
+        height: 50vw;
+    }
+}
+
+#footer
+{
+    height: 500px;
+}
