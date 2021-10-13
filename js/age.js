@@ -1,22 +1,23 @@
-// The date you were born
-var birthDate = new Date(2030, 1, 29, 0, 0, 0, 0);
+function UpdateAge() {
+    // The date you were born
+    var birthDate = new Date(2000 , 1, 29, 0, 0, 0, 0);
 
-// The current date
-var currentDate = new Date();
+    // The current date
+    var currentDate = new Date();
 
-// The age in years
-var age = currentDate.getFullYear() - birthDate.getFullYear();
+    // The age in years
+    var age = currentDate.getFullYear() - birthDate.getFullYear();
 
-// Compare the months
-var month = currentDate.getMonth() - birthDate.getMonth();
+    // Compare the months
+    var month = currentDate.getMonth() - birthDate.getMonth();
 
-// Compare the days
-var day = currentDate.getDate() - birthDate.getDate();
+    // Compare the days
+    var day = currentDate.getDate() - birthDate.getDate();
 
-// If the date has already happened this year
-if ( month < 0 || month == 0 && day < 0 )
-{
-    age--;
+    // If the date has already happened this year
+    if (month < 0 || month == 0 && day < 0) {
+        age--;
+    }
+
+    document.getElementById('age').innerHTML = age;
 }
-
-document.getElementById("age").innerHTML = age;
