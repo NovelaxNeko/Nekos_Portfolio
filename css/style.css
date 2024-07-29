@@ -1,19 +1,17 @@
-body
-{
+/* General body styling */
+body {
     margin: 0;
     padding: 0;
-
     background-color: gray;
     background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgb(30, 29, 44) 75%) no-repeat center center fixed,
     url(../img/pawbackground_erased.jpg) no-repeat center center fixed;
     background-size: cover;
-    
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
 
-#profilepic
-{
+/* Profile picture styling */
+#profilepic {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -21,21 +19,24 @@ body
     margin-top: 150px;
 }
 
-#header
-{
+/* Header styling */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: max-content;
-
     padding-left: 5%;
     padding-right: 5%;
-}
-
-#name
-{
     text-align: center;
 }
 
-#realname
-{
+/* Centering the name content */
+#name {
+    text-align: center;
+}
+
+#realname {
     font-family: 'Rajdhani', sans-serif;
     letter-spacing: 30px;
     font-weight: 100;
@@ -43,8 +44,7 @@ body
     margin-bottom: -75px;
 }
 
-#subname
-{
+#subname {
     font-family: 'Rajdhani', sans-serif;
     letter-spacing: 20px;
     font-weight: 400;
@@ -52,9 +52,8 @@ body
     margin-bottom: -15px;
 }
 
-#info
-{
-    text-align: left;
+#info {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: max-content;
@@ -62,92 +61,75 @@ body
     letter-spacing: 3px;
     font-weight: 500;
     margin-bottom: 100px;
-}
-
-#info
-{
     font-size: 20px;
 }
 
-@media (pointer:none), (pointer:coarse) 
-{
-    #info
-    {
+@media (pointer:none), (pointer:coarse) {
+    #info {
         font-size: 40px;
     }
 }
 
-#intro
-{
+/* Introduction text styling */
+#intro {
     font-weight: 100;
     font-size: 17px;
     letter-spacing: 2px;
     line-height: 28px;
+    text-align: center;  /* Center the text */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; /* Adjust the width as necessary */
 }
 
-#icons
-{
+#icons {
     text-align: center;
     width: 100%;
 }
 
-#icons .icon
-{
+#icons .icon {
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
+    width: 7%;
 }
 
-.icon a
-{
-    color:white;
+.icon a {
+    color: white;
     text-decoration: none;
-    
     opacity: 0.75;
 }
 
-.icon a:hover
-{
+.icon a:hover {
     opacity: 1;
     transition: opacity 0.15s ease-in;
 }
 
-.icon img
-{
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+.icon img.ytjobs-icon {
     width: 100%;
 }
 
-#icons .icon
-{
-    width: 7%;
-}
-
-.icon p
-{
-    font-size: 18px;
-}
-
-@media (pointer:none), (pointer:coarse) 
-{
-    #icons .icon
-    {
+@media (pointer:none), (pointer:coarse) {
+    #icons .icon {
         width: 17%;
     }
 
-    .icon p
-    {
+    .icon p {
         font-size: 36px;
     }
 }
 
-#envelope
-{
+#envelope {
     text-align: center;
     font-size: 18px;
 }
 
-.line
-{
+.line {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: white;
@@ -156,41 +138,69 @@ body
     margin-left: 25%;
 }
 
-#content
-{
+#content {
     text-align: center;
 }
 
-.sketchfab-embed-wrapper
-{
+.sketchfab-embed-wrapper {
     display: inline-block;
     overflow: hidden;
-
     opacity: 0.5;
 }
 
-.sketchfab-embed-wrapper:hover
-{
+.sketchfab-embed-wrapper:hover {
     opacity: 1;
     transition: opacity 0.35s ease-in;
 }
 
-iframe
-{
+iframe {
     width: 49vw;
     height: 25vw;
 }
 
-@media (pointer:none), (pointer:coarse) 
-{
-    iframe
-    {
+@media (pointer:none), (pointer:coarse) {
+    iframe {
         width: 100vw;
         height: 50vw;
     }
 }
 
-#footer
-{
+#footer {
     margin-top: 50px;
+}
+
+/* New section for projects */
+#projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.section-title {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: inline-block;
+    margin: 20px;
+    width: 7%; /* Further adjusted width to make images smaller */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: To add some styling */
+}
+
+.project p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: white;
 }
